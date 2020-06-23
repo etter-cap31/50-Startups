@@ -26,5 +26,5 @@ def Predict():
         Prediction=model.predict(X)
         Prediction=round(float(Prediction),2)
     return render_template('Prediction.html',value=Prediction)
-if __name__=="__main":
+if __name__=="__main__":
     app.run(debug=True)
